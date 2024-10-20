@@ -1,0 +1,31 @@
+/* Center the content of the page and leave 10% margin on both sides */
+.container {
+    margin: auto;
+    width: 80%;
+    position: relative;
+}
+
+#boxContainer {
+    border: solid black;
+    display: flex;
+    gap: 10px;
+    /* Center content inside boxContainer horizontally */
+    justify-content: center;
+    /* Center content inside boxContainer vertically */ 
+    align-items: start;
+    /* Creates a responsive design that moves boxes to the next row if the window size gets too small */
+    flex-wrap: wrap;
+    /* Evenly spaces boxes vertically if window gets smaller */
+    align-content: space-evenly;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 40pt;
+}
