@@ -19,33 +19,47 @@
     </div>
   </head>
 
-  <body class="container">
-    <!--Set a Heading with a margin of 20 px and automatic alignment-->
-    <h1 style="margin: 20px; align-self: auto">
-      Welcome to an <i> Adventurers Guide to Ruaneia </i>
-    </h1>
-    <p style="margin-left: 20px">
-      The world of Ruaneia consists of four continents (... in the West,
-      <i>"Desharim"</i> in the Center, ... in the East, ... in the South) and
-      the northern ice shelf. Bla Bla Bla...
-    </p>
-    <!-- Add an image with a maximum width of the currently shown content and a 1px wide black border-->
-    <img
-      style="
-        width: 100%;
-        max-width: fit-content;
-        border: 1px solid;
-        border-color: black;
-      "
-      src="images/Ruaneia.png"
-      alt="A roughly drawn map of the World of Ruaneia"
-    />
-    <img
-      style="width: 100%; border: 1px solid; border-color: black"
-      src="images/Region_Of_Kharashan.png"
-      alt="Map of the Region of Kharashan on the continent of 'Desharim'."
-    />
-    <button></button>
-    <p></p>
+  <body>
+    <div class="container">
+      <div class="snap-scroll-container">
+        <div class="snap-scroll-section">
+          <!--Set a Heading with a margin of 20 px and automatic alignment-->
+          <h1 style="margin: 20px; align-self: auto">
+            Welcome to an <i> Adventurers Guide to Ruaneia </i>
+          </h1>
+          <p style="margin-left: 20px">
+            The world of Ruaneia consists of four continents (... in the West,
+            <i>"Desharim"</i> in the Center, ... in the East, ... in the South)
+            and the northern ice shelf. Bla Bla Bla...
+          </p>
+
+          <!-- Add an image with a maximum width of 100% (of the page/container it sits in) and a 1px wide black border -->
+          <!-- In this case, boxContainer is used as flexbox to allow for easier centering of the image -->
+          <div id="boxContainer">
+            <div class="imageBox" style="width: 50%;">
+              <img
+                style="width: 100%; border: 1px solid; border-color: black"
+                src="images/Ruaneia.png"
+                alt="A roughly drawn map of the World of Ruaneia"
+              />
+            </div>
+          </div>
+        </div>
+        <p></p>
+
+        <div class="snap-scroll-section">
+          <p>Test</p>
+          <div id="boxContainer">
+            <div class="imageBox">
+              <img
+                style="width: 100%; border: 1px solid; border-color: black"
+                src="images/Ruaneia.png"
+                alt="A roughly drawn map of the World of Ruaneia"
+              />
+            </div>
+
+        </div>
+      </div>
+    </div>
   </body>
 </html>
