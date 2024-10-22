@@ -1,5 +1,8 @@
 <html>
   <head>
+    <!-- Add meta tag to create responsive design across devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Add external CSS styles to this HTML document -->
     <link rel="stylesheet" href="CSS/Searchbar.css" />
     <link rel="stylesheet" href="CSS/Pagestyle.css" />
@@ -36,7 +39,7 @@
           <!-- Add an image with a maximum width of 100% (of the page/container it sits in) and a 1px wide black border -->
           <!-- In this case, boxContainer is used as flexbox to allow for easier centering of the image -->
           <div id="boxContainer">
-            <div class="imageBox" style="width: 50%;">
+            <div class="imageBox" style="width: 50%">
               <img
                 style="width: 100%; border: 1px solid; border-color: black"
                 src="images/Ruaneia.png"
@@ -45,19 +48,21 @@
             </div>
           </div>
         </div>
-        <p></p>
 
         <div class="snap-scroll-section">
+          <h1 style="margin: 20px">What sets <i>Ruaneia</i> apart</h1>
           <p>Test</p>
-          <div id="boxContainer">
-            <div class="imageBox">
-              <img
-                style="width: 100%; border: 1px solid; border-color: black"
-                src="images/Ruaneia.png"
-                alt="A roughly drawn map of the World of Ruaneia"
-              />
-            </div>
+          <div id="boxContainer" style="max-height: 100%">
+            <div class="box"></div>
+            <div class="box" style="height: 75vh"></div>
+            <div class="box"></div>
+          </div>
+        </div>
 
+        <div class="snap-scroll-section">
+          <h2 style="margin: 20px">Impressum</h2>
+          <p>Test</p>
+          <div id="boxContainer"></div>
         </div>
       </div>
     </div>
