@@ -1,25 +1,56 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <!-- Add external CSS styles to this HTML document -->
-    <link rel="stylesheet" href="CSS/Searchbar.css" />
-    <link rel="stylesheet" href="CSS/Pagestyle.css" />
-
-    <!-- Define a name for the browser tab -->
-    <title>Adventurers Guide to Ruaneia</title>
-
-    <!-- Create navigation bar with styles defined in external CSS document -->
-    <div class="topnav">
-      <a href="index.html">Home</a>
-      <a class="active" href="History.html">History</a>
-      <a href="Characters.html">Characters</a>
-      <input type="text" placeholder="Search..." />
-    </div>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <title>Ruaneia: History</title>
   </head>
 
   <body>
+    <!-- Create navigation bar with styles defined in external CSS document -->
+    <div class="topnav">
+      <a class="active" id="currentPage">History</a>
+      <div id="menuLinks" class="menu-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="History.html">History</a>
+        <a href="Characters.html">Characters</a>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+    </div>
+
     <div class="container">
-      <!--Set a Heading with a margin of 20 px and automatic alignment-->
-      <h1 style="margin: 20px; align-self: auto">History of Ruaneia</h1>
+      <div class="snap-scroll-container">
+        <div class="snap-scroll-section">
+          <h1>Welcome to an <i> Adventurers Guide to Ruaneia </i></h1>
+          <div class="text-image-container">
+            <div class="scrollable-text">
+              <p>
+                The world of Ruaneia consists of four continents (... in the
+                West,
+                <i>"Desharim"</i> in the Center, ... in the East, ... in the
+                South) and the northern ice shelf.
+              </p>
+            </div>
+            <div class="imageContainer">
+              <img
+                style="width: 45vw; justify-self: center"
+                src="images/Ruaneia.png"
+                alt="A roughly drawn map of the World of Ruaneia"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="snap-scroll-section">
+          <h1>What makes <i>Ruaneia</i> unique?</h1>
+          <p>2</p>
+        </div>
+        <div class="snap-scroll-section">
+          <p>3</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
