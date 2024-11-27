@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="main.js"></script>
+    <title>Ruaneia: Council of Cliffs</title>
+  </head>
+
+  <body>
+    <!-- Create navigation bar with styles defined in external CSS document -->
+    <div class="topnav">
+      <a class="active" id="currentPage">Factions</a>
+      <div id="menuLinks" class="menu-links">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropdown-button">
+            Adventure <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Campaign Premise.html">Campaign Premise</a>
+          </div>
+        </div>
+        <a href="Calendar & Time.html">Calendar & Time</a>
+        <div class="dropdown">
+          <button
+            class="dropdown-button"
+            style="color: white; background-color: #2196f3"
+          >
+            Factions <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Freelance Orders.html">Freelance Orders</a>
+            <a class="active" href="Governmental Organisations.html"
+              >Governmental Organisations</a
+            >
+          </div>
+        </div>
+        <!-- <input type="text" placeholder="Search..." /> -->
+      </div>
+      <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+    </div>
+
+    <div class="container">
+      <div class="snap-scroll-container">
+        <div class="snap-scroll-section">
+          <h1>Governmental Organisations</h1>
+          <!-- Tab links -->
+          <div class="tab">
+            <button
+              class="tablinks"
+              onclick="openTab(event, 'Council of Cliffs')"
+            >
+              Council of Cliffs
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'Other')">
+              Other
+            </button>
+          </div>
+
+          <!-- Tab content -->
+          <div id="Council of Cliffs" class="tabcontent">
+            <div class="scrollable-text">
+              <h3>Council of Cliffs</h3>
+              <p>
+                The Council of the Cliffs, is a group of powerful oligarchs,
+                each representing an influential faction, family, or guild
+                within the city. Originally, the council was formed by the
+                city's founders—warriors, engineers, and scholars—who built
+                Shar'Mazir to protect the northern lands from the desert and
+                Zar'Khul. Over time, as the immediate threat of the World Eater
+                faded into legend, the council shifted its focus from defence
+                and survival to politics, wealth, and power. In memory of its
+                original purpose the council is still made up of five seats: one
+                for each of the four major parties involved in the founding of
+                Shar'Mazir—the Water Lords, the Iron Watch, the Merchant Guild
+                and the Arcane Collective—and one Free Seat elected each year as
+                a tiebreaker. As whispers of unrest and forgotten legends begin
+                to resurface, the council remains preoccupied with their
+                schemes, blind to the awakening darkness beyond the dunes.
+              </p>
+              <br />
+              <h4>Water Lords</h4>
+              <p>
+                The Water Lords control the aqueducts and the distribution of
+                water within Shar'Mazir and its immediate surroundings. Once
+                contributing the lifeblood of Shar'Mazir and a main driving
+                force of prosperity and wealth in the area, with the danger of
+                Zar'Khul long lost to myth, many of the Water Lords have shifted
+                their focus toward their personal gain. Envious of the Merchant
+                Guilds increasing wealth and influence, they have begun
+                implementing tight rations of water as political leverage and to
+                collect exorbitant prices for additional water supplies. <br />
+                However, their greed comes at a cost. In an effort to cut
+                expenses and manpower, the western aqueduct, stretching through
+                increasingly dangerous regions, has fallen into disrepair. The
+                declining water quality is driving commoners to abandon their
+                fields and seek less legitimate means of income, resulting in
+                food shortages and rising crime rates throughout the city.
+              </p>
+              <h4>Iron Watch</h4>
+              <p>
+                The Iron Watch once stood as a proud and disciplined military
+                force, defending Shar'Mazir and the northern lands from the
+                terrors of Zar'Khul and other dangers emerging from the southern
+                desert of Sharras'Thar. However, those glory days have long
+                since passed. What remains is little more than a city guard and
+                a handful of mercenary companies still on the city's payroll.
+                Once noble protectors, they now primarily serve as guards for
+                hire, enforcing the will of the highest bidder rather than
+                upholding the city's common good. <br />
+                Corruption runs deep within the ranks, with commanders more
+                concerned with political favors and personal enrichment than
+                upholding the values of their predecessors. Though the Iron
+                Watch still nominally guards the towering walls that stretch
+                between the western and eastern mountain passes, they've grown
+                lax, their forces spread thin, and many of their patrols
+                neglected. <br />
+                This negligence has allowed monsters, bandits, and pillagers to
+                establish themselves along the once-safe trade routes, causing
+                travel and commerce to falter. While their council pays little
+                attention to the growing danger, pockets of resistance remain
+                within the Iron Watch—veterans who remember the ideals they once
+                stood for, and younger recruits disillusioned by the corruption
+                they've inherited. These internal factions quietly struggle for
+                control, torn between restoring the Iron Watch's honor or
+                succumbing entirely to the highest bidder's whims.
+              </p>
+              <h4>Merchant Guild</h4>
+              <p>
+                The Merchant Guild controls all trade, taxation, and tariffs on
+                goods passing through Shar'Mazir, especially along the trade
+                routes that cut through the desert of Sharras'Thar and the
+                treacherous mountain passes of Khar'Zhatyr in the west and
+                Dur'Akhar in the east. Their relentless focus on profit has
+                driven them to develop innovative methods of transportation,
+                most notably the Sand Skiff—vessels capable of gliding across
+                the desert sands as ships do on the sea. These skiffs allow the
+                Merchant Guild to dominate desert trade routes, giving them a
+                near-monopoly on goods flowing through the region. <br />
+                Constantly seeking to expand their influence, the guild actively
+                establishes new trade hubs along their routes, consolidating
+                wealth and power with each new outpost. Their control over
+                Shar'Mazir's economy is absolute as they manipulate the market
+                through artificial scarcity, strategic monopolies, and high
+                tariffs, justifying their exorbitant prices by citing the
+                unpredictable dangers of desert travel. <br />
+                Many suspect the guild of exaggerating the dangers of the desert
+                to maintain their grip on wealth, while others suffer under
+                their inflated prices. Politically, the Merchant Guild wields
+                considerable influence in the Council of the Cliffs, often using
+                their wealth to sway votes or undermine rivals.
+              </p>
+              <h4>Arcane Collective</h4>
+              <p>
+                The Arcane Collective is tasked with overseeing all magical and
+                technological advancements in Shar'Mazir. Unlike the other
+                factions, the Collective has mostly stayed true to its original
+                mission: using knowledge and arcane power to safeguard and
+                uplift the common people of the city. <br />
+                The Arcane Collective's members are scholars, mages, and
+                engineers united by a belief in the value of shared knowledge
+                and responsible innovation. They regulate the safe use of magic
+                within the city and work tirelessly to improve daily life in
+                Shar'Mazir. However, despite their dedication, the Arcane
+                Collective is under constant pressure. Both the Merchant Guild
+                and the Water Lords seek control over their discoveries, hoping
+                to monetize and monopolize them. The Iron Watch often sees their
+                regulations as a limitation to their autonomy, occasionally
+                bypassing imposed restrictions for their own benefit. <br />
+                With growing tensions in the city, the Arcane Collective stands
+                at a crossroads. They must balance their role as guardians of
+                knowledge with the political maneuvering required to defend
+                their independence and autonomy. In a city where everyone seems
+                to have a price, they remain the last uncorrupted institution, a
+                fragile beacon of hope amid the encroaching darkness.
+              </p>
+              <h4>Free Seat</h4>
+              <p>
+                The Free Seat is a unique position on the Council of the Cliffs,
+                determined each year during a public event known as the Day of
+                Blades. On this day, representatives from the Freelance
+                Orders—independent mercenary and adventurer groups that operate
+                across Ruaneia—along with any ambitious citizen, vie for a
+                coveted role in city governance. This intense competition draws
+                spectators from across Shar'Mazir, transforming the Day of
+                Blades into both a celebration and a high-stakes political
+                spectacle. <br />
+                Once seated, the Free Seat representative acts as the council's
+                tiebreaker for the year. Holding this power makes the Free Seat
+                an attractive asset for the city's entrenched factions. Although
+                intended to offer a voice to the people and the independent
+                spirit of Ruaneia, the Free Seat has often fallen under the
+                influence of the four established council members, who eagerly
+                sponsor or pressure candidates to secure their votes.
+                Technically, any council faction may occupy or control the Free
+                Seat through a proxy or allied representative, resulting in
+                strategic alliances or intense rivalries each year as factions
+                attempt to sway the selection process in their favour. <br />
+                For ambitious Freelance Orders members, winning the Free Seat is
+                a chance to gain influence in the city. Yet, it is also a
+                dangerous role, as council members do not take kindly to
+                dissenting votes. Many previous Free Seat holders have been
+                found embroiled in scandal, quietly removed from power, or met
+                with unfortunate "accidents" when they resisted factional
+                pressure. Despite the risks, the Free Seat remains one of the
+                only paths to influence in Shar'Mazir for those not born into
+                the city's power structure, a symbol of hope for the ambitious
+                and the commoners alike.
+              </p>
+            </div>
+          </div>
+
+          <div id="Other" class="tabcontent">
+            <h3>Other</h3>
+            <p>More Governmental Organisations are sure to follow...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

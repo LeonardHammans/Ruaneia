@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="main.js"></script>
+    <title>Ruaneia: Freelance Orders</title>
+  </head>
+
+  <body>
+    <!-- Create navigation bar with styles defined in external CSS document -->
+    <div class="topnav">
+      <a class="active" id="currentPage">Factions</a>
+      <div id="menuLinks" class="menu-links">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropdown-button">
+            Adventure <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Campaign Premise.html">Campaign Premise</a>
+          </div>
+        </div>
+        <a href="Calendar & Time.html">Calendar & Time</a>
+        <div class="dropdown">
+          <button
+            class="dropdown-button"
+            style="color: white; background-color: #2196f3"
+          >
+            Factions <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a class="active" href="Freelance Orders.html">Freelance Orders</a>
+            <a href="Governmental Organisations.html"
+              >Governmental Organisations</a
+            >
+          </div>
+        </div>
+        <!-- <input type="text" placeholder="Search..." /> -->
+      </div>
+      <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+    </div>
+
+    <div class="container">
+      <div class="snap-scroll-container">
+        <div class="snap-scroll-section">
+          <h1>Freelance Orders</h1>
+          <p>
+            <b>Freelance Orders</b> are independent organizations of
+            adventurers, scholars, warriors, and survivalists that operate
+            beyond the confines of any single city or nation, often across the
+            vast and varied lands of <i>Ruaneia</i>. United by shared values,
+            specialized expertise, or a common mission, each Free Company
+            pursues goals that align with its distinct ideals and objectives.
+            While they are often welcomed for their skills, some view them with
+            suspicion due to their autonomy and influence.
+            <br />
+            Members of Freelance Orders frequently undertake tasks such as
+            exploration, the preservation of ancient lore, the pursuit of
+            mystical artifacts, and the safeguarding of remote or perilous
+            regions. Though each company is different, they all share a degree
+            of independence from local politics, making them invaluable allies,
+            yet unpredictable forces in the world's affairs. Some are well-known
+            for their altruism, while others might be more enigmatic or
+            self-serving.
+          </p>
+          <br />
+          <!-- Tab links -->
+          <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Sandguard')">
+              Sandguard
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'Other')">
+              Other
+            </button>
+          </div>
+
+          <!-- Tab content -->
+          <div id="Sandguard" class="tabcontent">
+            <h3>Sandguard</h3>
+            <p>
+              The Sandguard is a faction of desert-born warriors, scholars, and
+              survivalists committed to protecting the delicate balance of the
+              Sharras'Thar desert and the lands surrounding it. They serve as
+              guides, researchers, and protectors, standing against reckless
+              efforts to exploit the desert's resources, believing such actions
+              could disturb ancient powers like the legendary Calamity of the
+              Dunes. <br />
+              The Sandguard has established their headquarters in Shar'Mazir,
+              where they openly provide guidance and expertise to travellers,
+              and traders, but they remain vigilant in their opposition to
+              expansions that are harmful to the environment.
+            </p>
+            <h4>Core Values</h4>
+            <p>
+              <b><i>Balance with the Desert.</i></b> The Sandguard seeks to
+              maintain harmony with the desert ecosystem, preventing its
+              disruption.
+              <br />
+              <b><i>Knowledge and Wisdom.</i></b> Understanding the desert's
+              secrets is key to protecting it. The faction values research and
+              desert lore. <br />
+              <b><i>Protection and Guidance.</i></b> Skilled in both combat and
+              survival, the Sandguard protects travellers and defends cities
+              against desert threats.
+            </p>
+            <h3>Members</h3>
+            <p><i>Keep playing to discover more interesting content...</i></p>
+          </div>
+
+          <div id="Other" class="tabcontent">
+            <h3>Other</h3>
+            <p>More Freelance Orders are sure to follow...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

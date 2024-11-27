@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="main.js"></script>
     <title>Ruaneia: Campaign Premise</title>
   </head>
@@ -15,16 +19,29 @@
       <div id="menuLinks" class="menu-links">
         <a href="index.html">Home</a>
         <div class="dropdown">
-          <button class="dropdown-button" id="dropdownButton">Adventure</button>
+          <button
+            class="dropdown-button"
+            style="color: white; background-color: #2196f3"
+          >
+            Adventure <i class="fa fa-caret-down"></i>
+          </button>
           <div class="dropdown-content">
-            <a class="active" id="link" href="Campaign Premise.html"
-              >Campaign Premise</a
-            >
+            <a class="active" href="Campaign Premise.html">Campaign Premise</a>
           </div>
         </div>
         <a href="Calendar & Time.html">Calendar & Time</a>
-        <a href="Characters.html">Characters</a>
-        <input type="text" placeholder="Search..." />
+        <div class="dropdown">
+          <button class="dropdown-button">
+            Factions <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Freelance Orders.html">Freelance Orders</a>
+            <a href="Governmental Organisations.html"
+              >Governmental Organisations</a
+            >
+          </div>
+        </div>
+        <!-- <input type="text" placeholder="Search..." /> -->
       </div>
       <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
     </div>
@@ -32,52 +49,363 @@
     <div class="container">
       <div class="snap-scroll-container">
         <div class="snap-scroll-section">
-          <h1>Welcome to an <i> Adventurers Guide to Ruaneia </i></h1>
+          <h1>Campaign Premise</h1>
           <div class="text-image-container">
             <div class="scrollable-text">
+              <h2>Echoes beneath the Sand</h2>
               <p>
-                The world of Ruaneia consists of four continents (... in the
-                West,
-                <i>"Desharim"</i> in the Center, ... in the East, ... in the
-                South) and the northern ice shelf.
+                Welcome to <b>Shar'Mazir</b>, a bustling border-city at the
+                northern edge of the unforgiving desert of <b>Sharras'Thar</b>.
+                You are newly minted members of the <b>Sandguard</b>, a
+                <b>Freelance Order</b> of guides, explorers, and protectors
+                tasked with charting the desert's shifting sands, escorting
+                caravans, and facing the beasts that lurk in the dunes. Your
+                first missions may seem routine, but soon, whispers of a
+                forgotten power will lead you into something far darker than any
+                of you expected.
+                <br />
+                The city's ruling <b>Council of Cliffs</b> — an uneasy alliance
+                of ancient factions — controls everything in Shar'Mazir: from
+                water flow and the trade routes to the protection of its walls.
+                But recent discoveries suggest that greed and ambition have led
+                to corruption at its highest levels, risking not only the city's
+                stability but also the balance of the desert itself. It seems
+                that ancient relics are surfacing, strange sandstorms have
+                become more frequent, and desert cultists speak of a
+                <b>forgotten one</b> awakening.
+                <br />
+                As a Sandguard member, you're not only protecting the people but
+                are about to find yourself in a battle against an ancient force
+                once sealed in the desert's depths. Dark forces stir as you
+                navigate conspiracies in the city, face sand-dwelling
+                monstrosities, and unravel the secrets buried beneath the sands.
+                With each mission, the danger grows, and you'll be forced to
+                make choices that could save — or doom — not only Shar'Mazir but
+                all of the surrounding Region of Kharashan.
+                <br />
+                <br />
+                <i>
+                  Are you ready to brave the desert, uncover the truth, and face
+                  the <b>Echoes Beneath the Dunes</b>?
+                </i>
               </p>
-              <br />
-              <p><i>Work in Progress...</i></p>
             </div>
             <div class="imageContainer">
               <img
                 style="width: 45vw; justify-self: center"
-                src="images/Ruaneia.png"
-                alt="A roughly drawn map of the World of Ruaneia"
+                src="images/Region_Of_Kharashan.png"
+                alt="A roughly drawn map, depicting the larger Area of Kharashan and its major cities."
               />
             </div>
           </div>
         </div>
         <div class="snap-scroll-section">
-          <h1>What makes <i>Ruaneia</i> unique?</h1>
-          <h2>Aether engulfs the world of Ruaneia.</h2>
+          <h1>Ancient Language of Desharim</h1>
           <p>
-            Aether is a mysterious energy older than the world itself,
-            surrounding the known universe. Magic and Monsters are believed to
-            originate from the Aether. In very rare cases, humanoids are born
-            with a touch of Aether, giving them higher aptitudes for magic,
-            enhancing their physical prowess and making them more resilient to
-            injuries and illnesses. The first record of such an Aetherborn dates
-            back several thousands years, and yet little is known about the
-            Aether itself or what causes the birth of Aetherborns.
+            Hundreds or thousands of years before the current day, the continent
+            of <b>Desharim</b> was once controlled by a single Empire of Nomads
+            with a distinct Language. Eventhough it is not actively taught or
+            spoken anymore, some of the areas more connected to the heart of
+            Desharim, meaning the main desert of <b>Sharras'Thar</b>, still use
+            fragments of the Ancient Language and try to keep its memory alive
+            through documents, shards of ancient texts and maps.
           </p>
-          <br />
-          <h2>Player Characters are Aetherborn.</h2>
-          <p>
-            Faintly touched by the mysterious Aether, the characters are capable
-            of feats that would not be possible for average humanoids. Many
-            people revere Aetherborns in high esteem, seeing them as saviours or
-            protectors from the threats of the world. However, others see their
-            connection to a vastly mysterious and potentially dangerous source
-            of energy, as a threat and seek to rid the world of such
-            abominations.
-          </p>
-          <br />
+          <div class="scrollable-text">
+            <table class="styled-table">
+              <thead>
+                <tr>
+                  <th><strong>Ancient Language of Desharim</strong></th>
+                  <th><strong>English Translation</strong></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Aq</td>
+                  <td>water, lake, river</td>
+                </tr>
+                <tr>
+                  <td><b>Aq'Vushar</b></td>
+                  <td>Sea of the North</td>
+                </tr>
+                <tr>
+                  <td>Aqir</td>
+                  <td>to flow, to run like water</td>
+                </tr>
+                <tr>
+                  <td>Athir</td>
+                  <td>home, hearth, dwelling</td>
+                </tr>
+                <tr>
+                  <td>Athirun</td>
+                  <td>to settle, to dwell</td>
+                </tr>
+                <tr>
+                  <td>Azmar</td>
+                  <td>life, nourishment, fertility</td>
+                </tr>
+                <tr>
+                  <td>Azmarun</td>
+                  <td>to nourish, to give life</td>
+                </tr>
+                <tr>
+                  <td>Besh</td>
+                  <td>blood</td>
+                </tr>
+                <tr>
+                  <td>Beshir</td>
+                  <td>to bleed, to flow</td>
+                </tr>
+                <tr>
+                  <td>Darun</td>
+                  <td>to build, to create</td>
+                </tr>
+                <tr>
+                  <td>Dur</td>
+                  <td>old, ancient, length</td>
+                </tr>
+                <tr>
+                  <td><b>Dur'Akhar</b></td>
+                  <td>The Enduring Wall</td>
+                </tr>
+                <tr>
+                  <td>Dura</td>
+                  <td>green, lush</td>
+                </tr>
+                <tr>
+                  <td><b>Durimshar</b></td>
+                  <td>Endless Land</td>
+                </tr>
+                <tr>
+                  <td>Durun</td>
+                  <td>to grow old, to last through time</td>
+                </tr>
+                <tr>
+                  <td>Elun</td>
+                  <td>fire, flame, heat</td>
+                </tr>
+                <tr>
+                  <td>Elunir</td>
+                  <td>to burn, to ignite</td>
+                </tr>
+                <tr>
+                  <td>Gharun</td>
+                  <td>to seek, to find</td>
+                </tr>
+                <tr>
+                  <td>Imshar</td>
+                  <td>field, land</td>
+                </tr>
+                <tr>
+                  <td>Khar</td>
+                  <td>mountain, peak</td>
+                </tr>
+                <tr>
+                  <td><b>Khar'Aqir</b></td>
+                  <td>Mountain's Flow</td>
+                </tr>
+                <tr>
+                  <td><b>Khar'Zhatyr</b></td>
+                  <td>The Woven Peaks</td>
+                </tr>
+                <tr>
+                  <td><b>Kharashan</b></td>
+                  <td>Peaks of the Sand Sea</td>
+                </tr>
+                <tr>
+                  <td>Kharos</td>
+                  <td>metal, forge, craft</td>
+                </tr>
+                <tr>
+                  <td>Kharun</td>
+                  <td>to climb, to ascend</td>
+                </tr>
+                <tr>
+                  <td>Mar</td>
+                  <td>sea, large lake, ocean</td>
+                </tr>
+                <tr>
+                  <td>Marun</td>
+                  <td>to flow, to stream, to collect</td>
+                </tr>
+                <tr>
+                  <td>Mazir</td>
+                  <td>protection, defense</td>
+                </tr>
+                <tr>
+                  <td>Mazirun</td>
+                  <td>to protect, to defend</td>
+                </tr>
+                <tr>
+                  <td>Nara</td>
+                  <td>night, dark</td>
+                </tr>
+                <tr>
+                  <td>Narun</td>
+                  <td>to hide, to conceal</td>
+                </tr>
+                <tr>
+                  <td>Nura</td>
+                  <td>shadow, hiding spot</td>
+                </tr>
+                <tr>
+                  <td><b>Nura'Uru</b></td>
+                  <td>Shadow Woods</td>
+                </tr>
+                <tr>
+                  <td>Qar</td>
+                  <td>fortress, city, stronghold</td>
+                </tr>
+                <tr>
+                  <td><b>Qar'Omar</b></td>
+                  <td>Oceanhold</td>
+                </tr>
+                <tr>
+                  <td>Qarun</td>
+                  <td>to guard, to watch over</td>
+                </tr>
+                <tr>
+                  <td>Rakair</td>
+                  <td>to strike, to hit</td>
+                </tr>
+                <tr>
+                  <td>Rakar</td>
+                  <td>strike, hit, blow</td>
+                </tr>
+                <tr>
+                  <td>Rath</td>
+                  <td>stone, rock</td>
+                </tr>
+                <tr>
+                  <td>Rathair</td>
+                  <td>to stand, to rise</td>
+                </tr>
+                <tr>
+                  <td>Rathar</td>
+                  <td>height, cliff</td>
+                </tr>
+                <tr>
+                  <td>Salair</td>
+                  <td>to fly, to sail</td>
+                </tr>
+                <tr>
+                  <td>Salar</td>
+                  <td>sky, heavens</td>
+                </tr>
+                <tr>
+                  <td>Salarun</td>
+                  <td>to ascend, to rise</td>
+                </tr>
+                <tr>
+                  <td>Shaal</td>
+                  <td>wind, breeze, air</td>
+                </tr>
+                <tr>
+                  <td><b>Shaal'Qarun</b></td>
+                  <td>Wind's Watch</td>
+                </tr>
+                <tr>
+                  <td>Shaalir</td>
+                  <td>to whisper, to murmur, to blow</td>
+                </tr>
+                <tr>
+                  <td>Shar</td>
+                  <td>sand</td>
+                </tr>
+                <tr>
+                  <td><b>Shar'Mazir</b></td>
+                  <td>Guard of the Sands</td>
+                </tr>
+                <tr>
+                  <td>Sharras</td>
+                  <td>desert</td>
+                </tr>
+                <tr>
+                  <td><b>Sharras'Thar</b></td>
+                  <td>Endless Sands</td>
+                </tr>
+                <tr>
+                  <td>Talar</td>
+                  <td>time, age, era</td>
+                </tr>
+                <tr>
+                  <td>Talarun</td>
+                  <td>to age, to count, to measure, to pass</td>
+                </tr>
+                <tr>
+                  <td>Thar</td>
+                  <td>endless, unending</td>
+                </tr>
+                <tr>
+                  <td><b>Thar'Kharos</b></td>
+                  <td>Restless Forge</td>
+                </tr>
+                <tr>
+                  <td><b>Thar'Vular</b></td>
+                  <td>Eternal Hunt</td>
+                </tr>
+                <tr>
+                  <td>Uru</td>
+                  <td>tree, forest</td>
+                </tr>
+                <tr>
+                  <td>Uruun</td>
+                  <td>to grow, to expand</td>
+                </tr>
+                <tr>
+                  <td>Vah</td>
+                  <td>deep, abyss, eternal</td>
+                </tr>
+                <tr>
+                  <td><b>Vah'dura</b></td>
+                  <td>Eternal Green</td>
+                </tr>
+                <tr>
+                  <td>Vesh</td>
+                  <td>sun, light</td>
+                </tr>
+                <tr>
+                  <td>Veshir</td>
+                  <td>to shine, to illuminate</td>
+                </tr>
+                <tr>
+                  <td>Vukar</td>
+                  <td>strength, power</td>
+                </tr>
+                <tr>
+                  <td>Vukarun</td>
+                  <td>to fortify, to strengthen</td>
+                </tr>
+                <tr>
+                  <td>Vular</td>
+                  <td>hunt, pursuit</td>
+                </tr>
+                <tr>
+                  <td>Vushar</td>
+                  <td>north, cold, ice</td>
+                </tr>
+                <tr>
+                  <td>Zal</td>
+                  <td>path, road</td>
+                </tr>
+                <tr>
+                  <td>Zalir</td>
+                  <td>to walk, to move along a path</td>
+                </tr>
+                <tr>
+                  <td>Zar</td>
+                  <td>ridge, edge, boundary</td>
+                </tr>
+                <tr>
+                  <td>Zatyr</td>
+                  <td>woven, intertwined, connected</td>
+                </tr>
+                <tr>
+                  <td>Zatyrun</td>
+                  <td>to weave, to knit, to connect, to bind</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

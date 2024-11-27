@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="main.js"></script>
     <title>Ruaneia: Calendar & Time</title>
   </head>
@@ -23,8 +27,18 @@
           </div>
         </div>
         <a class="active" href="Calendar & Time.html">Calendar & Time</a>
-        <a href="Characters.html">Characters</a>
-        <input type="text" placeholder="Search..." />
+        <div class="dropdown">
+          <button class="dropdown-button">
+            Factions <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="Freelance Orders.html">Freelance Orders</a>
+            <a href="Governmental Organisations.html"
+              >Governmental Organisations</a
+            >
+          </div>
+        </div>
+        <!-- <input type="text" placeholder="Search..." /> -->
       </div>
       <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
     </div>
